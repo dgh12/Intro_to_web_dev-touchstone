@@ -4,94 +4,117 @@
         <title>
             Book Haven Bookstore - About Us
         </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     </head>
-    <body>
+    <body class = "background">
         <header>
-            <img src="../photos/Book_Haven_Bookstore_Hero.png" alt="Hero Image" width="100%">
-            <h1>Book Haven Bookstore</h1>
-            <img src="../photos/BHB_logo.png" alt="bookstore logo" width="50px">
+          <div class="header-container">
+            <div class="hero-image-container">
+                <img class="hero-image" src="../photos/Book_Haven_Bookstore_Hero.png" alt="" width="100%">
+            </div>
+            <h1 class = "header-title">Book Haven Bookstore</h1>
+            <img class="logo" src="../photos/BHB_logo.png" alt="">
             <nav>
-                <ul>
+                <ul class="menu">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="books.html">Books</a></li>
-                    <li>About Us</li>
+                    <li><a href="#">About Us</a></li>
                     <li><a href="customer-feedback.html">Testimonials and Events</a></li>
                 </ul>
+                <button class="hamburger-menu">
+                    <input type="checkbox" name="check" id="check">
+                    <label class = "h-menue" for="check" class="check-btn">
+                        <i class="fas fa-bars"></i>
+                    </label>
+                    <div class="nav-mobile w3-animate-right">
+                        <a href="index.html">Home</a>
+                        <a href="books.html">Books</a>
+                        <a href="#">About Us</a>
+                        <a href="customer-feedback.html">Testimonials and Event</a>
+                    </div>
+                </button>
             </nav>
+          </div>
         </header>
-        <section>
-            <h2>About Us</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione esse nulla illum 
-               ipsam commodi adipisci quidem, eius quaerat nostrum, aliquam labore eveniet deserunt 
-               nesciunt, sit incidunt ab voluptatibus repudiandae culpa. Lorem ipsum dolor sit amet 
-               consectetur adipisicing elit. Voluptas, voluptate! Doloribus, quisquam. Voluptas, 
-               voluptate! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum blanditiis 
-               suscipit optio laudantium id error omnis molestias quas culpa quam temporibus iusto,
-               at assumenda voluptate magnam aperiam ex. Porro, quam.</p>
-        </section>
-        <section>
-            <table>
-                <thead>
-                    <tr>
-                        <th colspan="3">Hours of Operation</th>
-                    </tr>
-                    <tr>
-                        <th>Day</th>
-                        <th>Open</th>
-                        <th>Close</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Mon - Fri</td>
-                        <td>9:00 AM</td>
-                        <td>8:00 PM</td>
-                    </tr>
-                    <tr>
-                        <td>Sat</td>
-                        <td>10:00 AM</td>
-                        <td>6:00 PM</td>
-                    </tr>
-                    <tr>
-                        <td>Sun</td>
-                        <td>11:00 AM</td>
-                        <td>5:00 PM</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-        <section>
-            <h3>Contact Us</h3>
-            <form action="#">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required><br><br>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required><br><br>
-                <label for="phone">Phone:</label>
-                <input type="tel" id="phone" name="phone"><br><br>
-                <label for="message">Message:</label><br>
-                <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
-                <input type="submit" value="Submit">
-            </form>
-        </section>
-        <footer>
-            <div>
-                <img src="../photos/Facebook_Logo_Primary.png" alt="social media icon" width="30px">
-                <img src="../photos/X_logo-black.png" alt="social media icon" width="25px">
-                <img src="../photos/Instagram_Glyph_Gradient.png" alt="social media icon" width="30px">
-                <img src="../photos/TikTok_Logo_primary.jpg" alt="social media icon" width="30px">
-            </div>
-            <div>
-                <h3>Newsletter</h3>
-                <form action="">
-                    <input type="email" placeholder="Your Email..." required>
-                    <input type="button" value="Subscribe">
+        <div class="container">
+             <section class="about-section">
+                <h2>About Us</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione esse nulla illum 
+                ipsam commodi adipisci quidem, eius quaerat nostrum, aliquam labore eveniet deserunt 
+                nesciunt, sit incidunt ab voluptatibus repudiandae culpa. Lorem ipsum dolor sit amet 
+                consectetur adipisicing elit. Voluptas, voluptate! Doloribus, quisquam. Voluptas, 
+                voluptate! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum blanditiis 
+                suscipit optio laudantium id error omnis molestias quas culpa quam temporibus iusto,
+                at assumenda voluptate magnam aperiam ex. Porro, quam.</p>
+            </section>
+            <section class="hours-section">
+                <h2>Hours of Operation</h2>
+                <table>
+                        <tr>
+                            <th style="border-left: none;">Day</th>
+                            <th>Open</th>
+                            <th>Close</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="border-left: none;">Mon - Fri</td>
+                            <td>9:00 AM</td>
+                            <td>8:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td style="border-left: none;">Sat</td>
+                            <td>10:00 AM</td>
+                            <td>6:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td style="border-left: none; border-bottom: none;">Sun</td>
+                            <td style="border-bottom: none;">11:00 AM</td>
+                            <td style="border-bottom: none;">5:00 PM</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section class = "contact-section">
+                <h2>Contact Us</h2>
+                <form action="#">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required><br><br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br><br>
+                    <label style = "width: 70px;" for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone"><br><br>
+                    <label style="width: 98px;" for="message">Message:</label><br>
+                    <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+                    <input type="submit" value="Submit">
                 </form>
-            </div>
-            <div>
-                <a href="index.html">home</a>
-                <a href="books.html">our books</a>
-                <a href="customer-feedback.html">customer feedback and events</a>
+            </section>
+        </div>
+        <footer class="footer">
+            <div class="footer-flex-1">
+                <div class="footer-flex-2">
+                    <div class="newsletter">
+                        <h3>Newsletter</h3>
+                        <form action="">
+                            <input type="email" placeholder="Your Email..." required>
+                            <input type="button" value="Subscribe">
+                        </form>
+                    </div>
+                    <div class="social-media">
+                        <img src="../photos/Facebook_Logo_Primary.png" alt="social media icon">
+                        <img src="../photos/X_logo-black.png" alt="social media icon">
+                        <img src="../photos/Instagram_Glyph_Gradient.png" alt="social media icon" >
+                        <img src="../photos/TikTok_Logo_primary.jpg" alt="social media icon" >
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <a href="index.html">home</a>
+                    <a href="books.html">our books</a>
+                    <a href="customer-feedback.html">customer feedback and events</a>
+                </div>
             </div>
         </footer>
     </body>

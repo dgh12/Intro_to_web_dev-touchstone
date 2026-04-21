@@ -4,103 +4,132 @@
         <title>
             Book Haven Bookstore - Testimonials and Events
         </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     </head>
-    <body>
+    <body class="background">
         <header>
-            <img src="../photos/Book_Haven_Bookstore_Hero.png" alt="Hero Image" width="100%">
-            <h1>Book Haven Bookstore</h1>
-            <img src="../photos/BHB_logo.png" alt="bookstore logo" width="50px">
+          <div class="header-container">
+            <div class="hero-image-container">
+                <img class="hero-image" src="../photos/Book_Haven_Bookstore_Hero.png" alt="" width="100%">
+            </div>
+            <h1 class = "header-title">Book Haven Bookstore</h1>
+            <img class="logo" src="../photos/BHB_logo.png" alt="">
             <nav>
-                <ul>
+                <ul class="menu">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="books.html">Books</a></li>
                     <li><a href="about.html">About Us</a></li>
-                    <li>Testimonials and Events</li>
+                    <li><a href="#">Testimonials and Events</a></li>
                 </ul>
+               <button class="hamburger-menu">
+                    <input type="checkbox" name="check" id="check">
+                    <label class = "h-menue" for="check" class="check-btn">
+                        <i class="fas fa-bars"></i>
+                    </label>
+                    <div class="nav-mobile w3-animate-right">
+                        <a href="index.html">Home</a>
+                        <a href="books.html">Books</a>
+                        <a href="about.html">About Us</a>
+                        <a href="#">Testimonials and Event</a>
+                    </div>
+                </button>
             </nav>
+          </div>
         </header>
-        <section>
-            <h2>Testimonials</h2>
-            <div>
-                <h3>John Doe</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae similique
-                   est vel vitae quisquam consectetur eligendi natus ratione, incidunt aut, iure 
-                   ad dolorem quaerat fugit placeat dignissimos architecto distinctio sapiente? 
-                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium, consequatur
-                   quibusdam. Minima provident quas quisquam enim voluptatem sapiente accusantium 
-                   labore in hic placeat sequi, adipisci velit ex iusto facilis distinctio.</p>
-                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, repellat 
-                   magnam commodi eveniet nobis rerum ipsa corporis distinctio assumenda excepturi
-                   fuga earum saepe obcaecati amet harum voluptatem praesentium animi tempore. 
-                   Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum itaque repellat
-                   alias ullam fugit nemo nam quisquam voluptatem doloribus perferendis ab neque 
-                   sit recusandae magnam iste, quos minima quas odio!</P>
-            </div>
-            <div>
-                <h3>Jane Smith</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, voluptate 
-                consequatur! Voluptas, voluptate! Lorem ipsum dolor sit amet consectetur 
-                adipisicing elit. Voluptas, voluptate! Lorem ipsum dolor sit amet consectetur 
-                adipisicing elit. Voluptas, voluptate!</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex odio quos provident!
-                Id sapiente autem, magni mollitia, at dolore laudantium aspernatur earum numquam
-                dignissimos nostrum, iure consequuntur consectetur iusto pariatur!</p>
-            </div>
-            <div>
-                <h3>Emily Johnson</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum odio sed quae veniam 
-                   natus, nostrum possimus eligendi? Obcaecati quam recusandae ad officiis praesentium
-                   quas possimus, itaque, voluptas at veritatis iure?Lorem ipsum dolor sit, amet 
-                   consectetur adipisicing elit. Quos animi doloremque in provident labore recusandae,
-                   unde cumque, inventore porro qui id sapiente est nostrum officia a. Sapiente 
-                   magnam rerum dicta?</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex odio quos provident!
-                   Id sapiente autem, magni mollitia, at dolore laudantium aspernatur earum numquam
-                  dignissimos nostrum, iure consequuntur consectetur iusto pariatur!</p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita, quidem 
-                   corporis. Cumque ipsa veritatis nisi mollitia quaerat, alias vitae esse eveniet
-                   deleniti, quo corrupti non consectetur aperiam commodi animi asperiores!</p>
-            </div>
-        </section>
-        <section>
-            <h2>Events</h2>
-            <div>
-                <h3>Upcoming Event 1</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat necessitatibus 
-                   impedit animi asperiores soluta hic ipsum, nulla ex deserunt minima nam, vero, 
-                   placeat temporibus amet ab. Repellendus eius laboriosam nesciunt? Lorem ipsum 
-                   dolor sit amet consectetur adipisicing elit. Quis iure rem quod cupiditate consequatur
-                   odio aperiam porro dolore laudantium. Corrupti totam eius quas. Corporis consequuntur,
-                   officia numquam illum aliquam voluptatum.</p>
-            </div>
-            <div>
-                <h3>Upcoming Event 2</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat necessitatibus 
-                   impedit animi asperiores soluta hic ipsum, nulla ex deserunt minima nam, vero, 
-                   placeat temporibus amet ab. Repellendus eius laboriosam nesciunt? Lorem ipsum 
-                   dolor sit amet consectetur adipisicing elit. Quis iure rem quod cupiditate consequatur
-                   odio aperiam porro dolore laudantium. Corrupti totam eius quas. Corporis consequuntur,
-                   officia numquam illum aliquam voluptatum.</p>
-            </div>
-        </section>
-        <footer>
-            <div>
-                <img src="../photos/Facebook_Logo_Primary.png" alt="social media icon" width="30px">
-                <img src="../photos/X_logo-black.png" alt="social media icon" width="25px">
-                <img src="../photos/Instagram_Glyph_Gradient.png" alt="social media icon" width="30px">
-                <img src="../photos/TikTok_Logo_primary.jpg" alt="social media icon" width="30px">
-            </div>
-            <div>
-                <h3>Newsletter</h3>
-                <form action="" method="post">
-                    <input type="email" placeholder="Your Email..." required>
-                    <input type="button" value="Subscribe">
-                </form>
-            </div>
-            <div>
-                <a href="index.html">home</a>
-                <a href="books.html">our books</a>
-                <a href="contact.html">contact us</a>
+        <div class="container">
+            <section class="feedback-section">
+                <h2>Testimonials</h2>
+                <div class="feedback">
+                    <div>
+                        <h3>John Doe</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae similique
+                        est vel vitae quisquam consectetur eligendi natus ratione, incidunt aut, iure 
+                        ad dolorem quaerat fugit placeat dignissimos architecto distinctio sapiente? 
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium, consequatur
+                        quibusdam. <span class = "read-more"> read more + </span><span class="hidden"> provident quas quisquam enim voluptatem sapiente accusantium 
+                        labore in hic placeat sequi, adipisci velit ex iusto facilis distinctio.</p>
+                        <p class = "hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, repellat 
+                        magnam commodi eveniet nobis rerum ipsa corporis distinctio assumenda excepturi
+                        fuga earum saepe obcaecati amet harum voluptatem praesentium animi tempore. 
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum itaque repellat
+                        alias ullam fugit nemo nam quisquam voluptatem doloribus perferendis ab neque 
+                        sit recusandae magnam iste, quos minima quas odio!</p></span>
+                    </div>
+                    <div>
+                        <h3>Jane Smith</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, voluptate 
+                        consequatur! Voluptas, voluptate! Lorem ipsum dolor sit amet consectetur 
+                        adipisicing elit. Voluptas, voluptate! Lorem ipsum dolor sit amet consectetur 
+                        adipisicing elit. Voluptas, voluptate!</p> 
+                        <span class="read-more">read more +</span>
+                        <p class="hidden">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex odio quos provident!
+                        Id sapiente autem, magni mollitia, at dolore laudantium aspernatur earum numquam
+                        dignissimos nostrum, iure consequuntur consectetur iusto pariatur!</p>
+                    </div>
+                    <div class="hidden">
+                        <h3>Emily Johnson</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum odio sed quae veniam 
+                        natus, nostrum possimus eligendi? Obcaecati quam recusandae ad officiis praesentium
+                        quas possimus, itaque, voluptas at veritatis iure?Lorem ipsum dolor sit, amet 
+                        consectetur adipisicing elit. Quos animi doloremque in provident labore recusandae,
+                        unde cumque, inventore porro qui id sapiente est nostrum officia a. Sapiente 
+                        magnam rerum dicta?</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex odio quos provident!
+                        Id sapiente autem, magni mollitia, at dolore laudantium aspernatur earum numquam
+                        dignissimos nostrum, iure consequuntur consectetur iusto pariatur!</p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita, quidem 
+                        corporis. Cumque ipsa veritatis nisi mollitia quaerat, alias vitae esse eveniet
+                        deleniti, quo corrupti non consectetur aperiam commodi animi asperiores!</p>
+                    </div>
+                </div>
+            </section>
+            <section class="events-section">
+                <h2>Events</h2>
+                <div>
+                    <h3>Upcoming Event 1</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat necessitatibus 
+                    impedit animi asperiores soluta hic ipsum, nulla ex deserunt minima nam, vero, 
+                    placeat temporibus amet ab. Repellendus eius laboriosam nesciunt? Lorem ipsum 
+                    dolor sit amet consectetur adipisicing elit. Quis iure rem quod cupiditate consequatur
+                    odio aperiam porro dolore laudantium. Corrupti totam eius quas. Corporis consequuntur,
+                    officia numquam illum aliquam voluptatum.</p>
+                </div>
+                <div>
+                    <h3>Upcoming Event 2</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat necessitatibus 
+                    impedit animi asperiores soluta hic ipsum, nulla ex deserunt minima nam, vero, 
+                    placeat temporibus amet ab. Repellendus eius laboriosam nesciunt? Lorem ipsum 
+                    dolor sit amet consectetur adipisicing elit. Quis iure rem quod cupiditate consequatur
+                    odio aperiam porro dolore laudantium. Corrupti totam eius quas. Corporis consequuntur,
+                    officia numquam illum aliquam voluptatum.</p>
+                </div>
+            </section>
+        </div>
+        <footer class="footer">
+            <div class="footer-flex-1">
+                <div class="footer-flex-2">
+                    <div class="newsletter">
+                        <h3>Newsletter</h3>
+                        <form action="">
+                            <input type="email" placeholder="Your Email..." required>
+                            <input type="button" value="Subscribe">
+                        </form>
+                    </div>
+                    <div class="social-media">
+                        <img style="width: 30px; background-color: #ffffff; padding: 2px;" src="../photos/Facebook_Logo_Primary.png" alt="social media icon">
+                        <img style="width: 30px; background-color: #ffffff; padding: 2px;" src="../photos/X_logo-black.png" alt="social media icon">
+                        <img style="width: 30px; background-color: #ffffff; padding: 2px;" src="../photos/Instagram_Glyph_Gradient.png" alt="social media icon" >
+                        <img style="width: 30px; background-color: #ffffff; padding: 2px;" src="../photos/TikTok_Logo_primary.jpg" alt="social media icon" >
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <a href="index.html">home</a>
+                    <a href="books.html">our books</a>
+                    <a href="about.html">about us</a>
+                </div>
             </div>
         </footer>
     </body>
