@@ -8,6 +8,7 @@
         <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <script src="scripts/scripts.js"></script>
     </head>
     <body class = "background">
         <header>
@@ -80,15 +81,15 @@
             </section>
             <section class = "contact-section">
                 <h2>Contact Us</h2>
-                <form action="#">
+                <form onsubmit="contact_message()" action="/post" method="POST">
                     <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required><br><br>
+                    <input class="clear" type="text" id="name" name="name" required><br><br>
                     <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required><br><br>
+                    <input class="clear" type="email" id="email" name="email" required><br><br>
                     <label style = "width: 70px;" for="phone">Phone:</label>
-                    <input type="tel" id="phone" name="phone"><br><br>
+                    <input class="clear" type="tel" id="phone" name="phone"><br><br>
                     <label style="width: 98px;" for="message">Message:</label><br>
-                    <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+                    <textarea class="clear" id="message" name="message" rows="4" cols="50" required></textarea><br><br>
                     <input type="submit" value="Submit">
                 </form>
             </section>
@@ -98,9 +99,9 @@
                 <div class="footer-flex-2">
                     <div class="newsletter">
                         <h3>Newsletter</h3>
-                        <form action="">
-                            <input type="email" placeholder="Your Email..." required>
-                            <input type="button" value="Subscribe">
+                        <form onsubmit="Subscribe()" action="/post" method="POST">
+                            <input class="clear" type="email" name="email" placeholder="Your Email..." required>
+                            <input type="submit" value="Subscribe">
                         </form>
                     </div>
                     <div class="social-media">

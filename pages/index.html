@@ -4,11 +4,11 @@
 		<title>
 			Book Haven Bookstore - Homepage
 		</title>
-		<script src="add_to_cart.js"></script>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <script src="scripts/scripts.js"></script>
 	</head>
 	<body class="background">
 		<header>
@@ -67,11 +67,11 @@
                 <div class="books">
                     <div class="w-book">
                         <img src="../photos/Client3_Book2.png" alt="Popular Book Image">
-                        <button>Add to Cart</button>
+                        <a onclick="Book_submission('Glory Riders')" href="cart.html">Add to Cart</a>
                     </div>
                     <div class="w-book">
                         <img src="../photos/Client3_Book3.png" alt="Popular Book Image">
-                        <button>Add to Cart</button>
+                        <a onclick="Book_submission('Sorcerer\'s Shadowed Chronicles')" href="cart.html">Add to Cart</a>
                     </div>
                 </div> 
             </section>
@@ -80,11 +80,11 @@
                 <div class="books">
                     <div class="w-book">
                         <img src="../photos/Client3_Book1.png" alt="Today's Deal Book Image">
-                        <button>Add to Cart</button>
+                        <a onclick="Book_submission('Brie Mine 4Ever')" href="cart.html">Add to Cart</a>
                     </div>
                     <div class="w-book">
                         <img src="../photos/Client3_Magazine2.png" alt="Today's Deal Magazine Image">
-                        <button>Add to Cart</button>
+                        <a onclick="Book_submission('Travel Magazine')" href="cart.html">Add to Cart</a>
                     </div>
                 </div>
             </section>
@@ -94,9 +94,9 @@
                 <div class="footer-flex-2">
                     <div class="newsletter">
                         <h3>Newsletter</h3>
-                        <form action="">
-                            <input type="email" placeholder="Your Email..." required>
-                            <input type="button" value="Subscribe">
+                        <form onsubmit="Subscribe()" action="/post" method="POST">
+                            <input class="clear" type="email" name="email" placeholder="Your Email..." required>
+                            <input type="submit" value="Subscribe">
                         </form>
                     </div>
                     <div class="social-media">

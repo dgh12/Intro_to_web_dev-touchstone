@@ -10,7 +10,7 @@ section {
 .header-container {
     position: relative;
     text-align: center;
-    width: 99%;
+    width: 100%;
 }
 
 .hero-image {
@@ -41,6 +41,62 @@ section {
     display: none;
     background-color: transparent;
     border: none;
+}
+ .hamburger-menu input {
+    opacity: 0;
+    position: absolute;
+    height: 0;
+    width: 0;
+}
+.hamburger-menu ul {
+    display: none;
+}
+.hamburger-menu ul li {
+    list-style-type: none;
+    padding: 5px;
+    border: #ffffff solid 1px;
+}
+.nav-mobile a {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #742c36;
+    margin: 0px;
+    font-size: 18px;
+    padding: 5px;
+    border-radius: 5px;
+}
+.nav-mobile a:hover {
+    background-color: #3e5641;
+    border: #fff8 solid 1px;
+    border-radius: 5px;
+}
+.nav-mobile a[href = "#" ] {
+    background-color: #3e5641;
+    border: #fff8 solid 1px;
+    border-radius: 5px;
+}
+.nav-mobile {
+    display: none;
+    position: absolute;
+    top: 50px;
+    width: 100%;
+}
+#check:checked ~ .nav-mobile {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    background-color: #742c36;
+    padding: 5px;
+    border-radius: 5px;
+}
+.h-menue {
+    position: absolute;
+    top: 0px;
+    right: 15px;
+    background-color: #ffffff;
+    border: #742c36 solid 5px;
+    border-radius: 5px;
+    width: 30px;
 }
 .menu {
     position: absolute;
@@ -228,16 +284,21 @@ h2 {
 .w-book img {
     height: 300px;
 }
-.w-book button {
+.w-book a {
     background-color: #5c2e5c;
     color: #ffffff;
-    border: none;
+    border: #000000 solid 1px;
     width: 100px;
     height: 30px;
     text-align: center;
     line-height: 30px;
     border-radius: 5px;
     text-decoration: none;
+}
+.w-book a:hover {
+    background-color: #3e5641;
+    width: 101px;
+    height: 31px;
 }
 .about-section {
     display: flex;
@@ -354,6 +415,57 @@ h2 {
     width: 100%;
     height: 250px;
 }
+.cart{
+    height: 120px;
+    width: 120px;
+}
+.cart img {
+    height: 100px;
+}
+.cart-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.cart-items h2 {
+    width: 200px;
+    align-self: center;
+}
+.cart-items div {
+    align-self: center;
+}
+.cart-menu {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.cart-menu .h-menue {
+    border-color: #5c2e5c;
+}
+.cart-btns {
+    margin: 10px;
+}
+.cart-return {
+    position: absolute;
+    top: 35px;
+    right: 10px;
+    background-color: #ffffff;
+    border: #5c2e5c solid 10px;
+    border-radius: 5px;
+    padding: 5px;
+}
+.cart-return a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 18px;
+}
+.cart-return:hover {
+    background-color: #742c36;
+}
+.cart-return:hover a {
+    color: #ffffff;
+}
 .footer {
     border-top: #742c36 solid 10px;
     background-color: #3f5461;
@@ -443,62 +555,6 @@ h2 {
         right: 0px;
         width: auto;
         height: auto;
-    }
-    .hamburger-menu input {
-        opacity: 0;
-        position: absolute;
-        height: 0;
-        width: 0;
-    }
-    .hamburger-menu ul {
-        display: none;
-    }
-    .hamburger-menu ul li {
-        list-style-type: none;
-        padding: 5px;
-        border: #ffffff solid 1px;
-    }
-    .nav-mobile a {
-        text-decoration: none;
-        color: #ffffff;
-        background-color: #742c36;
-        margin: 0px;
-        font-size: 18px;
-        padding: 5px;
-        border-radius: 5px;
-    }
-    .nav-mobile a:hover {
-        background-color: #3e5641;
-        border: #fff8 solid 1px;
-        border-radius: 5px;
-    }
-    .nav-mobile a[href = "#" ] {
-        background-color: #3e5641;
-        border: #fff8 solid 1px;
-        border-radius: 5px;
-    }
-    .nav-mobile {
-        display: none;
-        position: absolute;
-        top: 50px;
-        width: 100%;
-    }
-    #check:checked ~ .nav-mobile {
-        display: flex;
-        flex-direction: row;
-        gap: 5px;
-        background-color: #742c36;
-        padding: 5px;
-        border-radius: 5px;
-    }
-    .h-menue {
-        position: absolute;
-        top: 0px;
-        right: 15px;
-        background-color: #ffffff;
-        border: #742c36 solid 5px;
-        border-radius: 5px;
-        width: 30px;
     }
     .menu {
         display: none;
