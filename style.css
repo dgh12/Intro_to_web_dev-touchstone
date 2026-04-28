@@ -1,4 +1,7 @@
-
+* {
+    box-sizing: border-box;
+    color: #131c26
+}
 body {
     background-color: #3e5641c5;
 }
