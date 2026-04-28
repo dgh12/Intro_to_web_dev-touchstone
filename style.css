@@ -151,7 +151,7 @@ h2 {
     height: auto;
     margin-left: 10px;
 }
-.read-more {
+.read-more, .read-less{
     display: none;
 }
 .welcome-section img {
