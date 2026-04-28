@@ -83,13 +83,19 @@
                 <h2>Contact Us</h2>
                 <form onsubmit="contact_message()" action="/post" method="POST">
                     <label for="name">Name:</label>
-                    <input class="clear" type="text" id="name" name="name" required><br><br>
+                    <input class="clear about" type="text" id="name" name="name" required><br><br>
                     <label for="email">Email:</label>
-                    <input class="clear" type="email" id="email" name="email" required><br><br>
+                    <input class="clear about" type="email" id="email" name="email" required><br><br>
                     <label style = "width: 70px;" for="phone">Phone:</label>
-                    <input class="clear" type="tel" id="phone" name="phone"><br><br>
+                    <input class="clear about" type="tel" id="phone" name="phone"><br><br>
                     <label style="width: 98px;" for="message">Message:</label><br>
-                    <textarea class="clear" id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+                    <textarea class="clear about" id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+                    <div>
+                        <label for="is_custom">Custom Order?</label>
+                        <input onclick="custom_visibility()" class = "clear is_custom about" id="is_custom" type="checkbox">
+                    </div>
+                    <label class="custom custom-hidden" style="width: 140px;" for="custom">Custom Order:</label><br>
+                    <textarea class="clear custom-hidden custom about" id="custom" name="custom" rows="4" cols="50" required></textarea><br><br>
                     <input type="submit" value="Submit">
                 </form>
             </section>

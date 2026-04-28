@@ -11,7 +11,7 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     </head>
-    <body class = "background">
+    <body onload="go_to_cart()" class = "background">
         <header>
           <div class="header-container">
             <div class="hero-image-container">
@@ -42,57 +42,71 @@
           </div>
         </header>
         <div class="container">
+            <section class="cart-items">
+                <div class="cart-background">
+                    <h2>Items in Cart</h2>
+                    <div onclick="exit_cart()" class="exit-cart"> X </div>
+                    <div class="default-view">
+                        <h3>Cart is Empty</h3>
+                    </div>
+                    <div class="items-in-cart"></div>
+                    <div class="cart-btns">
+                        <button onclick="clear_cart()" class="clear-cart">Clear Cart</button>
+                        <button onclick="process_order()" class="process-order-btn">Process Order</button>
+                    </div>
+                </div>
+            </section>
             <section class="search-cart-section">
                 <form action="search">
                     <input type="text" name="q" placeholder="Search books...">
                     <input type="submit" value="Search">
                 </form>
-                <a href="cart.html">
+                <div onclick="open_cart()">
                     <img src="/photos/cart_icon.jpg" alt="Cart Icon" width="20px">
-                </a>
+                </div>
             </section>
             <section class="book-container">
                 <h2>Our Books</h2>
                 <div>
                     <form class="book-grid" onsubmit="Book_submission()" action="post" method="POST" >
                         <div>
-                            <label name="book_1" for="book_1"><img src="../photos/Client3_Book1.png" alt="Book Image"></label>
+                            <label name="book_1" for="book_1"><img src="/photos/Client3_Book1.png" alt="Book Image"></label>
                             <input class="d-checkbox" type="checkbox" id="book_1" name="book" value="Brie Mine 4Ever">  
                         </div>
                         <div>
-                            <label for="book_2"><img src="../photos/Client3_Book2.png" alt="Book Image"></label>
+                            <label for="book_2"><img src="/photos/Client3_Book2.png" alt="Book Image"></label>
                             <input class="d-checkbox" type="checkbox" id="book_2" name="book" value="Glory Riders">
                         </div>
                         <div>
-                            <label for="book_3"><img src="../photos/Client3_Book3.png" alt="Book Image"></label>
-                            <input class="d-checkbox" type="checkbox" id="book_3"  name="book" value="Sorcerers Shadowed Chronicles">
+                            <label for="book_3"><img src="/photos/Client3_Book3.png" alt="Book Image"></label>
+                            <input class="d-checkbox" type="checkbox" id="book_3"  name="book" value="Sorcerer\'s Shadowed Chronicles">
                         </div>
                         <div>
-                            <label for="magazine_1"><img src="../photos/Client3_Magazine1.png" alt="Magazine Image"></label>
+                            <label for="magazine_1"><img src="/photos/Client3_Magazine1.png" alt="Magazine Image"></label>
                             <input class="d-checkbox" type="checkbox" id="magazine_1" name="book" value="Ball Magazine">
                         </div>
                         <div>
-                            <label for="magazine_2"><img src="../photos/Client3_Magazine2.png" alt="Magazine Image"></label>  
+                            <label for="magazine_2"><img src="/photos/Client3_Magazine2.png" alt="Magazine Image"></label>  
                             <input class="d-checkbox" type="checkbox" id="magazine_2" name="book" value="Travel Magazine">
                         </div>
                         <div>
-                            <label for="magazine_3"><img src="../photos/Client3_Magazine3.png" alt="Magazine Image"></label>
+                            <label for="magazine_3"><img src="/photos/Client3_Magazine3.png" alt="Magazine Image"></label>
                             <input class="d-checkbox" type="checkbox" id="magazine_3" name="book" value="Eat Magazine">
                         </div>
                         <div>
-                            <label for="notebook"><img src="../photos/Client3_Notebook.png" alt="Notebook Image"></label>
+                            <label for="notebook"><img src="/photos/Client3_Notebook.png" alt="Notebook Image"></label>
                             <input class="d-checkbox" type="checkbox" id="notebook" name="book" value="Book Haven Notebook">
                         </div>
                         <div>
-                            <label for="stickers"><img src="../photos/Client3_Stickers.png" alt="Stickers Image"></label>
+                            <label for="stickers"><img src="/photos/Client3_Stickers.png" alt="Stickers Image"></label>
                             <input class="d-checkbox" type="checkbox" id="stickers" name="book" value="Book Haven Stickers">
                         </div>
                         <div>
-                            <label for="tote_bag"><img src="../photos/Client3_ToteBag.png" alt="Tote Bag Image"></label>
+                            <label for="tote_bag"><img src="/photos/Client3_ToteBag.png" alt="Tote Bag Image"></label>
                             <input class="d-checkbox" type="checkbox" id="tote_bag" name="book" value="Book Haven Tote Bag">
                         </div>
                         <br>
-                        <input type="submit" value="Add to Cart">
+                        <input class="add-to-cart" type="submit" value="Add to Cart">
                     </form>
                 </div>
             </section>

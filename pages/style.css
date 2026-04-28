@@ -208,13 +208,15 @@ h2 {
     color: #ffffff;
 }
 .search-cart-section img {
-    background-color: #5c2e5c;
-    color: #ffffff;
     border: none;
     height: 50px;
     width: 50px;
     text-align: center;
     line-height: 50px;
+    border-radius: 5px;
+}
+.search-cart-section div:hover {
+    border: 3px solid #5c2e5c;
     border-radius: 5px;
 }
 .book-container {
@@ -274,6 +276,10 @@ h2 {
     flex-direction: row;
     gap: 20px;
     padding: 20px;
+}
+.add-to-cart {
+    position: sticky;
+    bottom: 0;
 }
 .w-book {
     display: flex;
@@ -371,6 +377,12 @@ h2 {
     align-self: center;
     cursor: pointer;
 }
+.custom-hidden {
+    display: none;
+}
+.custom-visible {
+    display: block;
+}
 .feedback-section {
     display: flex;
     flex-direction: column;
@@ -423,16 +435,49 @@ h2 {
     height: 100px;
 }
 .cart-items {
-    display: flex;
+    display: none;
+    z-index: 1;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
     flex-direction: column;
     justify-content: center;
+    background-color: #00000080;
 }
-.cart-items h2 {
+.cart-background {
+    overflow: scroll;
+    position: relative;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 5px;
+    width: 50%;
+}
+.cart-background h2 {
+    margin-top: 0px;
     width: 200px;
-    align-self: center;
 }
-.cart-items div {
-    align-self: center;
+.exit-cart {
+    position: absolute;
+    top: 0px;
+    right: 3px;
+    padding: 5px;
+    border: #742c36 solid 5px;
+    border-radius: 5px;
+    background-color: #3e5641c5;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.exit-cart:hover {
+    box-shadow: 0px 0px 0px 3px #5c2e5c;
+    right: 6px;
 }
 .cart-menu {
     display: block;
@@ -584,6 +629,11 @@ h2 {
     }
     .read-more {
         display: inline;
+    }
+    .read-less {
+        display: none;
+    }
+    .read-more, .read-less{
         color: #5c2e5c;
         cursor: pointer;
     }
@@ -637,6 +687,9 @@ h2 {
     }
     .search-cart-section form input {
         width: 90%;
+    }
+    .cart-background{
+        width: 100%;
     }
     .content {
         width: 800px;
