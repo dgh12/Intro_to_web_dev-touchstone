@@ -114,10 +114,10 @@ async function Book_submission (bookname, element) {
     };
 };
 function go_home () {
-    window.location.href = window.location.origin + "Intro_to_web_dev-touchstone/index.html"
+    window.location.href = window.location.origin + "/Intro_to_web_dev-touchstone/index.html"
 }
 function books() {
-    window.location.href = window.location.origin + "Intro_to_web_dev-touchstone/books.html"
+    window.location.href = window.location.origin + "/Intro_to_web_dev-touchstone/books.html"
 }
 async function open_cart(home=false) {
     await populate_cart();
