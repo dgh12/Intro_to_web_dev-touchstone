@@ -201,16 +201,3 @@ function display(id) {
         };
     }
 };
-function custom_visibility () {
-    let elements = document.getElementsByClassName("custom");
-    for (let x = 0; x < elements.length; x++) {
-        const element = elements[x];
-        if (element.className.includes("custom-hidden")) {
-            element.classList.remove("custom-hidden");
-            element.classList.add("custom-visible");
-        } else {
-            element.classList.remove("custom-visible");
-            element.classList.add("custom-hidden");
-        };
-    };
-};
