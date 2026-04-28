@@ -63,9 +63,10 @@ async function Book_submission (bookname, element) {
             msg = "No new items added to the cart";
         } else if (book_length == 1) {
             book_str = String(Books[0])
-            msg = "The item " + book_str + " was added to the cart";
+            msg = `The item ${book_str} was added to the cart`;
         } else if (book_length == 2) {    
             book_str += Books[0] + " and " + Books[1];
+            msg = `The items ${book_str} were added to the cart`;
         } else if (book_length > 2) {
             let book_num = 1;
             let book_num_arry = []
@@ -81,7 +82,7 @@ async function Book_submission (bookname, element) {
                     book_str += " " + Books[num - 1] + ",";
                 }
             });
-            msg = "The items" + book_str + " were added to the cart";
+            msg = `The items ${book_str} were added to the cart`;
         };
     } else if (!element) {
         sessionStorage.setItem("home_book", bookname);
